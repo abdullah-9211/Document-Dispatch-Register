@@ -10,18 +10,17 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <SplitPane layoutY="-1.0" prefHeight="400.0" prefWidth="370.0">
+      <SplitPane layoutY="-1.0" prefHeight="400.0" prefWidth="380.0">
          <items>
             <VBox prefHeight="200.0" prefWidth="100.0">
                <children>
                   <Pane prefHeight="51.0" prefWidth="369.0">
                      <children>
-                        <Text layoutX="115.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #304860;" text="Enter Details" underline="true">
+                        <Text layoutX="138.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #304860;" text="Enter Details" underline="true">
                            <font>
-                              <Font name="Arial Black" size="30.0" />
+                              <Font name="Georgia" size="30.0" />
                            </font>
                         </Text>
                      </children>
@@ -30,57 +29,57 @@
                      <children>
                         <Text layoutX="14.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title :" wrappingWidth="62.41680908203125">
                            <font>
-                              <Font size="17.0" />
+                              <Font name="Georgia" size="17.0" />
                            </font>
                         </Text>
-                        <TextField fx:id="EnterTitle" layoutX="140.0" layoutY="7.0" prefHeight="26.0" prefWidth="194.0" style="-fx-border-style: circle;" text="Document Title" />
+                        <TextField fx:id="EnterTitle" layoutX="140.0" layoutY="7.0" prefHeight="26.0" prefWidth="240.0" style="-fx-border-style: circle;" text="Document Title" />
                      </children>
                   </Pane>
                   <Pane prefHeight="45.0" prefWidth="350.0">
                      <children>
                         <Text layoutX="14.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sender ID :">
                            <font>
-                              <Font size="17.0" />
+                              <Font name="Georgia" size="17.0" />
                            </font>
                         </Text>
-                        <TextField fx:id="EnterSenderId" layoutX="142.0" layoutY="6.0" prefHeight="26.0" prefWidth="194.0" text="61101-58901-1" />
+                        <TextField fx:id="EnterSenderId" layoutX="142.0" layoutY="6.0" prefHeight="26.0" prefWidth="240.0" text="61101-58901-1" />
                      </children>
                   </Pane>
                   <Pane prefHeight="45.0" prefWidth="350.0">
                      <children>
                         <Text layoutX="14.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sender Name :">
                            <font>
-                              <Font size="17.0" />
+                              <Font name="Georgia" size="17.0" />
                            </font>
                         </Text>
-                        <TextField fx:id="EnterSenderName" layoutX="140.0" layoutY="7.0" prefHeight="26.0" prefWidth="194.0" text="Amir Rehman" />
+                        <TextField fx:id="EnterSenderName" layoutX="140.0" layoutY="7.0" prefHeight="26.0" prefWidth="240.0" text="Amir Rehman" />
                      </children>
                   </Pane>
                   <Pane prefHeight="45.0" prefWidth="350.0">
                      <children>
                         <Text layoutX="14.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Final Receiver :">
                            <font>
-                              <Font size="17.0" />
+                              <Font name="Georgia" size="17.0" />
                            </font>
                         </Text>
-                        <TextField fx:id="EnterFinalReceiver" layoutX="140.0" layoutY="7.0" prefHeight="26.0" prefWidth="194.0" text="Director" />
+                        <TextField fx:id="EnterFinalReceiver" layoutX="140.0" layoutY="7.0" prefHeight="26.0" prefWidth="240.0" text="Director" />
                      </children>
                   </Pane>
                   <Pane prefHeight="45.0" prefWidth="350.0">
                      <children>
                         <Text layoutX="14.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description :">
                            <font>
-                              <Font size="17.0" />
+                              <Font name="Georgia" size="17.0" />
                            </font>
                         </Text>
-                        <TextArea fx:id="EnterDescription" layoutX="131.0" prefHeight="44.0" prefWidth="208.0" text="This is a sample description of the document..." />
+                        <TextArea fx:id="EnterDescription" layoutX="138.0" prefHeight="44.0" prefWidth="240.0" text="This is a sample description of the document..." />
                      </children>
                   </Pane>
                   <Pane prefHeight="45.0" prefWidth="350.0">
                      <children>
                         <Text layoutX="14.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attatchments :">
                            <font>
-                              <Font size="17.0" />
+                              <Font name="Georgia" size="17.0" />
                            </font>
                         </Text>
                         <TextField fx:id="EnterAttatchments" layoutX="143.0" layoutY="7.0" prefHeight="26.0" prefWidth="33.0" text="0" />
@@ -90,10 +89,10 @@
                      <children>
                         <Text layoutX="14.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Department :">
                            <font>
-                              <Font size="17.0" />
+                              <Font name="Georgia" size="17.0" />
                            </font>
                         </Text>
-                        <TextField fx:id="EnterDepartment" layoutX="134.0" layoutY="7.0" prefHeight="26.0" prefWidth="194.0" text="Software Engineering" />
+                        <TextField fx:id="EnterDepartment" layoutX="134.0" layoutY="7.0" prefHeight="26.0" prefWidth="247.0" text="Software Engineering" />
                      </children>
                   </Pane>
                </children>
@@ -104,9 +103,9 @@
          <children>
             <Pane prefHeight="400.0" prefWidth="232.0">
                <children>
-                  <Text layoutX="12.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attatchments + Documents">
+                  <Text layoutX="16.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attatchments + Documents" wrappingWidth="208.0">
                      <font>
-                        <Font size="17.0" />
+                        <Font name="Georgia" size="17.0" />
                      </font>
                   </Text>
                   <Pane layoutX="35.0" layoutY="135.0" prefHeight="97.0" prefWidth="161.0" style="-fx-border-color: #000000;">
