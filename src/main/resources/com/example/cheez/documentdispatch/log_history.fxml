@@ -8,7 +8,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f2f2f2;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cheez.documentdispatch.HistoryController">
    <children>
       <Text fill="#30486e" layoutX="233.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HISTORY">
@@ -16,17 +15,17 @@
             <Font name="Georgia" size="30.0" />
          </font>
       </Text>
-      <Button fx:id="backbtn" layoutX="6.0" layoutY="11.0" mnemonicParsing="false" onAction="#goBack" prefHeight="34.0" prefWidth="58.0" style="-fx-background-color: #f2f2f2;" />
-      <Line endX="-70.20001220703125" endY="-1.1444091796875E-5" layoutX="123.0" layoutY="28.0" startX="-107.20001220703125" startY="-1.1444091796875E-5" stroke="#30486e" strokeWidth="4.0" />
-      <Line endX="-81.20001220703125" endY="-8.60000228881836" layoutX="117.0" layoutY="27.0" startX="-100.0" stroke="#30486e" strokeWidth="4.0" />
-      <Line endX="-82.20001220703125" endY="9.400012969970703" layoutX="117.0" layoutY="29.0" startX="-100.0" stroke="#30486e" strokeWidth="4.0" />
-      <TableView fx:id="historyTable" layoutX="26.0" layoutY="81.0" prefHeight="280.0" prefWidth="554.0">
+      <Button fx:id="backbtn" layoutX="6.0" layoutY="11.0" mnemonicParsing="false" onAction="#goBack" prefHeight="34.0" prefWidth="50.0" style="-fx-background-color: #f2f2f2;" />
+      <Line endX="-77.4000244140625" endY="-1.1444091796875E-5" layoutX="123.0" layoutY="28.0" startX="-107.20001220703125" startY="-1.1444091796875E-5" stroke="#30486e" strokeWidth="3.0" />
+      <Line endX="-86.60000610351562" endY="-7.799999237060547" layoutX="117.0" layoutY="27.0" startX="-100.0" stroke="#30486e" strokeWidth="3.0" />
+      <Line endX="-88.20001220703125" endY="8.599994659423828" layoutX="117.0" layoutY="29.0" startX="-100.0" stroke="#30486e" strokeWidth="3.0" />
+      <TableView fx:id="historyTable" layoutX="26.0" layoutY="81.0" prefHeight="280.0" prefWidth="554.0" style="-fx-background-color: #f2f2f2;">
         <columns>
-          <TableColumn prefWidth="103.20001220703125" text="Document Title" />
-          <TableColumn prefWidth="112.0" text="Sender ID" />
-            <TableColumn prefWidth="120.0" text="Sender Name" />
-            <TableColumn prefWidth="108.00006103515625" text="Final Reciever" />
-            <TableColumn prefWidth="109.5999755859375" text="Department" />
+          <TableColumn fx:id="title" prefWidth="103.20001220703125" text="Document Title" />
+          <TableColumn fx:id="senderID" prefWidth="100.79998779296875" text="Sender ID" />
+            <TableColumn fx:id="senderName" prefWidth="102.4000244140625" text="Sender Name" />
+            <TableColumn fx:id="reciever" prefWidth="104.00006103515625" text="Final Reciever" />
+            <TableColumn fx:id="dept" prefWidth="145.5999755859375" text="Department" />
         </columns>
       </TableView>
    </children>
