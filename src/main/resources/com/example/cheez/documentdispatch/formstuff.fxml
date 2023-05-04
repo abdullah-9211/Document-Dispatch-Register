@@ -127,7 +127,7 @@
                         </Text>
                      </children>
                   </Pane>
-                  <Button layoutX="97.0" layoutY="259.0" mnemonicParsing="false" style="-fx-background-color: #304860;" text="Scan">
+                  <Button fx:id="scan_btn" layoutX="97.0" layoutY="259.0" mnemonicParsing="false" onAction="#scanDoc" style="-fx-background-color: #304860;" text="Scan" textFill="WHITE">
                      <font>
                         <Font size="20.0" />
                      </font>
