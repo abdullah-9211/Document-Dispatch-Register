@@ -2,6 +2,7 @@ package com.example.cheez.documentdispatch;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.collections.transformation.FilteredList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -10,6 +11,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
@@ -35,6 +37,19 @@ public class HistoryController {
 
         historyTable.setItems(historyRecords);
     }
+    @FXML
+    private TextField IDSearch;
+    @FXML
+    private TextField SearchTitle;
+
+    @FXML
+    private TextField SearchFromDate;
+
+    @FXML
+    private TextField SearchToDate;
+
+    @FXML
+    private Button SearchButton;
 
     @FXML
     private TableColumn<Record, String> dept;
@@ -69,6 +84,15 @@ public class HistoryController {
             e.printStackTrace();
         }
     }
+//    datalist.addAll(//add objects that are created)
+//    @FXML
+//    FilteredList<Record> filteredData = new FilteredList<>(datalist, b => true);
+//    if (newValue ==null || newValue.isEmpty()){
+//        return true;
+//    }
+//    String lowerCaseFilter = newValue.toLowerCase();
+    //if cases to find stuff out if present or stuff
+
 
 
 
