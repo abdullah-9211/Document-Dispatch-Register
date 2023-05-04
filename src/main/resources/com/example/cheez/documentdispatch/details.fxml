@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f2f2f2;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cheez.documentdispatch.DetailsController">
+    <children>
+        <Text fill="#30486e" fontSmoothingType="LCD" layoutX="251.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Details" textAlignment="CENTER">
+            <font>
+                <Font name="Georgia" size="30.0" />
+            </font>
+        </Text>
+        <Button fx:id="done_btn" layoutX="480.0" layoutY="352.0" mnemonicParsing="false" onAction="#done" prefHeight="33.0" prefWidth="102.0" style="-fx-background-color: #30486e;" text="Done" textFill="WHITE">
+            <font>
+                <Font name="Roboto Bold" size="12.0" />
+            </font>
+        </Button>
+      <ListView fx:id="details_list" layoutX="21.0" layoutY="86.0" prefHeight="241.0" prefWidth="562.0" />
+      <Text fill="#30486e" fontSmoothingType="LCD" layoutX="21.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attachments: 2 + 1" textAlignment="CENTER">
+         <font>
+            <Font name="Georgia" size="30.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Text>
+    </children>
+</AnchorPane>
