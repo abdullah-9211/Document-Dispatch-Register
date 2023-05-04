@@ -15,17 +15,22 @@
       </Text>
       <Pane layoutX="74.0" layoutY="71.0" prefHeight="314.0" prefWidth="446.0" style="-fx-border-color: #000000; -fx-background-color: #FFFFFF;">
          <children>
-            <Button fx:id="doc_btn" layoutX="55.0" layoutY="32.0" mnemonicParsing="false" onAction="#document_add" prefHeight="65.0" prefWidth="350.0" style="-fx-background-color: #03095e;" text="Add Document" textFill="WHITE">
+            <Button fx:id="doc_btn" layoutX="55.0" layoutY="26.0" mnemonicParsing="false" onAction="#document_add" prefHeight="48.0" prefWidth="350.0" style="-fx-background-color: #03095e;" text="Add Document" textFill="WHITE">
                <font>
                   <Font size="13.0" />
                </font>
             </Button>
-            <Button fx:id="hist_btn" layoutX="55.0" layoutY="125.0" mnemonicParsing="false" onAction="#viewHistory" prefHeight="65.0" prefWidth="350.0" style="-fx-background-color: #03095e;" text="View History" textFill="WHITE">
+            <Button fx:id="hist_btn" layoutX="55.0" layoutY="94.0" mnemonicParsing="false" onAction="#viewHistory" prefHeight="48.0" prefWidth="350.0" style="-fx-background-color: #03095e;" text="View History" textFill="WHITE">
                <font>
                   <Font size="13.0" />
                </font>
             </Button>
-            <Button fx:id="user_btn" layoutX="55.0" layoutY="220.0" mnemonicParsing="false" onAction="#addUser" prefHeight="65.0" prefWidth="350.0" style="-fx-background-color: #03095e;" text="Add User" textFill="WHITE">
+            <Button fx:id="user_btn" layoutX="55.0" layoutY="165.0" mnemonicParsing="false" onAction="#addUser" prefHeight="48.0" prefWidth="350.0" style="-fx-background-color: #03095e;" text="Add User" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="track_btn" layoutX="55.0" layoutY="236.0" mnemonicParsing="false" onAction="#trackDoc" prefHeight="48.0" prefWidth="350.0" style="-fx-background-color: #03095e;" text="Track Document" textFill="WHITE">
                <font>
                   <Font size="13.0" />
                </font>

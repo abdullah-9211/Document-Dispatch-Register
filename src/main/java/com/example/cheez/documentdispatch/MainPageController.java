@@ -24,6 +24,11 @@ public class MainPageController {
 
     @FXML
     private Button hist_btn;
+
+    @FXML
+    private Button track_btn;
+
+
     @FXML
     void addUser(ActionEvent event) {
         try {
@@ -62,5 +67,19 @@ public class MainPageController {
             e.printStackTrace();
         }
     }
+
+    @FXML
+    void trackDoc(ActionEvent event) {
+        try {
+            root = FXMLLoader.load(getClass().getResource("trackingPage.fxml"));
+            stage = (Stage) track_btn.getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 
 }

@@ -33,7 +33,7 @@
             </Pane>
          </children>
       </Pane>
-      <Button fx:id="ScanButton1" layoutX="334.0" layoutY="307.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="134.0" style="-fx-background-color: #304860;" text="Upload" textFill="WHITE">
+      <Button fx:id="ScanButton1" layoutX="334.0" layoutY="307.0" mnemonicParsing="false" onAction="#uploadDoc" prefHeight="42.0" prefWidth="134.0" style="-fx-background-color: #304860;" text="Upload" textFill="WHITE">
          <font>
             <Font name="Georgia" size="14.0" />
          </font>

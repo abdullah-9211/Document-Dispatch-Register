@@ -20,7 +20,7 @@
                 <Font name="Georgia" size="14.0" />
             </font>
         </Button>
-        <Button fx:id="UploadButton" layoutX="355.0" layoutY="307.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="134.0" style="-fx-background-color: #304860;" text="Upload" textFill="WHITE">
+        <Button fx:id="UploadButton" layoutX="355.0" layoutY="307.0" mnemonicParsing="false" onAction="#uploadAttachments" prefHeight="42.0" prefWidth="134.0" style="-fx-background-color: #304860;" text="Upload" textFill="WHITE">
             <font>
                 <Font name="Georgia" size="14.0" />
             </font>
