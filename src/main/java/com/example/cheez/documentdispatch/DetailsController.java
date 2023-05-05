@@ -52,7 +52,7 @@ public class DetailsController implements Initializable {
     void done(ActionEvent event) {
         // navigate to next page
         try {
-            root = FXMLLoader.load(getClass().getResource("main_page.fxml"));
+            root = FXMLLoader.load(getClass().getResource("trackingPage.fxml"));
             stage = (Stage) done_btn.getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);

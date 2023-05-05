@@ -49,5 +49,10 @@
             <Font name="Roboto Bold" size="12.0" />
          </font>
       </Button>
+      <Text fx:id="haveAccount" fill="#2f50e4" layoutX="418.0" layoutY="357.0" onMouseClicked="#moveToLogin" strokeType="OUTSIDE" strokeWidth="0.0" text="Already Have Account?">
+         <font>
+            <Font name="Georgia" size="13.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>
