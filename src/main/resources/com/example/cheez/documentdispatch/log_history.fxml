@@ -26,17 +26,16 @@
           <TableColumn fx:id="senderID" prefWidth="100.79998779296875" text="Sender ID" />
             <TableColumn fx:id="senderName" prefWidth="102.4000244140625" text="Sender Name" />
             <TableColumn fx:id="reciever" prefWidth="104.00006103515625" text="Final Reciever" />
-            <TableColumn fx:id="dept" prefWidth="145.5999755859375" text="Department" />
+            <TableColumn fx:id="date" prefWidth="145.5999755859375" text="Date" />
         </columns>
       </TableView>
-      <TextField fx:id="SearchTitle" layoutX="112.0" layoutY="62.0" prefHeight="26.0" prefWidth="106.0" promptText="Enter Title" />
-      <Button fx:id="SearchButton" layoutX="528.0" layoutY="62.0" mnemonicParsing="false" onAction="#handleSearchButton" prefHeight="26.0" prefWidth="57.0" style="-fx-background-color: #304860;" text="Search" textFill="WHITE">
+      <TextField fx:id="SearchTitle" layoutX="126.0" layoutY="62.0" prefHeight="26.0" prefWidth="126.0" promptText="Enter Title" />
+      <Button fx:id="SearchButton" layoutX="502.0" layoutY="62.0" mnemonicParsing="false" onAction="#handleSearchButton" prefHeight="26.0" prefWidth="57.0" style="-fx-background-color: #304860;" text="Search" textFill="WHITE">
          <font>
             <Font name="Georgia" size="12.0" />
          </font>
       </Button>
-      <TextField fx:id="SearchFromDate" layoutX="226.0" layoutY="62.0" prefHeight="26.0" prefWidth="153.0" promptText="From Date (DD/MM/YYYY)" />
-      <TextField fx:id="SearchToDate" layoutX="377.0" layoutY="62.0" prefHeight="26.0" prefWidth="142.0" promptText="To Date (DD/MM/YYYY)" />
-      <TextField fx:id="SearchID" layoutX="26.0" layoutY="62.0" prefHeight="26.0" prefWidth="78.0" promptText="Enter ID" />
+      <TextField fx:id="SearchFromDate" layoutX="273.0" layoutY="62.0" prefHeight="26.0" prefWidth="182.0" promptText="From Date (DD/MM/YYYY)" />
+      <TextField fx:id="SearchID" layoutX="26.0" layoutY="62.0" prefHeight="26.0" prefWidth="82.0" promptText="Enter ID" />
    </children>
 </AnchorPane>
