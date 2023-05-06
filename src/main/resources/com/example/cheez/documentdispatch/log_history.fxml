@@ -30,7 +30,7 @@
         </columns>
       </TableView>
       <TextField fx:id="SearchTitle" layoutX="112.0" layoutY="62.0" prefHeight="26.0" prefWidth="106.0" promptText="Enter Title" />
-      <Button fx:id="SearchButton" layoutX="528.0" layoutY="62.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="57.0" style="-fx-background-color: #304860;" text="Search" textFill="WHITE">
+      <Button fx:id="SearchButton" layoutX="528.0" layoutY="62.0" mnemonicParsing="false" onAction="#handleSearchButton" prefHeight="26.0" prefWidth="57.0" style="-fx-background-color: #304860;" text="Search" textFill="WHITE">
          <font>
             <Font name="Georgia" size="12.0" />
          </font>
