@@ -48,6 +48,8 @@ public class AttachmentsController implements Initializable {
 
     public int fileCount = 0;
 
+    @FXML
+    private Button done_btn;
 
 
     @Override
@@ -83,15 +85,11 @@ public class AttachmentsController implements Initializable {
         // woo file scan hogayi
     }
 
-    public void done(){
-        // navigate to next page
-    }
-
     @FXML
     void uploadAttachments(ActionEvent event) {
         try {
             root = FXMLLoader.load(getClass().getResource("set_route.fxml"));
-            stage = (Stage) UploadButton.getScene().getWindow();
+            stage = (Stage) done_btn.getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
             stage.show();

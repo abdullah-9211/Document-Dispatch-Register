@@ -48,6 +48,8 @@ public class DocController implements Initializable {
 
     public int fileCount = 0;
 
+    @FXML
+    private Button done_btn;
 
 
     @Override
@@ -84,6 +86,15 @@ public class DocController implements Initializable {
 
     public void done(){
         // navigate to next page
+        try {
+            root = FXMLLoader.load(getClass().getResource("UploadAttatchments.fxml"));
+            stage = (Stage) done_btn.getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }

@@ -19,7 +19,7 @@
                 <Font name="Georgia" size="14.0" />
             </font>
         </Button>
-        <Button fx:id="done_btn" layoutX="339.0" layoutY="269.0" mnemonicParsing="false" onAction="#done" prefHeight="42.0" prefWidth="134.0" style="-fx-background-color: #304860;" text="Done" textFill="WHITE">
+        <Button fx:id="done_btn" layoutX="339.0" layoutY="269.0" mnemonicParsing="false" onAction="#uploadAttachments" prefHeight="42.0" prefWidth="134.0" style="-fx-background-color: #304860;" text="Done" textFill="WHITE">
             <font>
                 <Font name="Georgia" size="14.0" />
             </font>
