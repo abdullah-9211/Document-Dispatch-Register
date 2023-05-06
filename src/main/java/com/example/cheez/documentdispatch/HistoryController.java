@@ -89,7 +89,7 @@ public class HistoryController {
     }
 
     private boolean searchFindsRecord(Record record, String searchText1, String searchText2, String searchText3){
-        return (record.getTitle().contains(searchText1.toLowerCase())) ||
+        return (record.getTitle().toLowerCase().contains(searchText1.toLowerCase())) ||
                 (record.getSenderID().toLowerCase().contains(searchText2.toLowerCase())) ||
                 (record.getDate().toString().toLowerCase().contains(searchText3.toLowerCase()));
     }
