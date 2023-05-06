@@ -47,7 +47,7 @@
                   </Pane>
                   <Pane prefHeight="45.0" prefWidth="350.0">
                      <children>
-                        <Text layoutX="14.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sender Name :">
+                        <Text layoutX="14.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID/Rollno.">
                            <font>
                               <Font name="Georgia" size="17.0" />
                            </font>
@@ -57,7 +57,7 @@
                   </Pane>
                   <Pane prefHeight="45.0" prefWidth="350.0">
                      <children>
-                        <Text layoutX="14.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Final Receiver :">
+                        <Text layoutX="14.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To be passed to: :">
                            <font>
                               <Font name="Georgia" size="17.0" />
                            </font>
@@ -77,7 +77,7 @@
                   </Pane>
                   <Pane prefHeight="45.0" prefWidth="350.0">
                      <children>
-                        <Text layoutX="14.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attatchments :">
+                        <Text layoutX="14.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Priority :">
                            <font>
                               <Font name="Georgia" size="17.0" />
                            </font>
@@ -93,6 +93,16 @@
                            </font>
                         </Text>
                         <TextField fx:id="EnterDepartment" layoutX="134.0" layoutY="7.0" prefHeight="26.0" prefWidth="247.0" text="Software Engineering" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="45.0" prefWidth="350.0">
+                     <children>
+                        <Text layoutX="14.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date sent:">
+                           <font>
+                              <Font name="Georgia" size="17.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="DateSent" layoutX="134.0" layoutY="7.0" prefHeight="26.0" prefWidth="247.0" style="-fx-background-color: #E3E3E3;" text="04/05/2023" />
                      </children>
                   </Pane>
                </children>
@@ -127,12 +137,12 @@
                         </Text>
                      </children>
                   </Pane>
-                  <Button layoutX="97.0" layoutY="259.0" mnemonicParsing="false" style="-fx-background-color: #304860;" text="Scan">
+                  <Button fx:id="scan_btn" layoutX="50.0" layoutY="258.0" mnemonicParsing="false" onAction="#scanDoc" style="-fx-background-color: #304860;" text="Scan/Upload" textFill="WHITE">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Button>
-                  <Text layoutX="159.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID: 655678" />
+                  <Text layoutX="131.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doc ID: 655678" />
                </children>
             </Pane>
          </children>

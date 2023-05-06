@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class Signup {
+public class LoginController {
 
     private Stage stage;
     private Scene scene;
@@ -21,31 +21,25 @@ public class Signup {
 
 
     @FXML
-    private Button addUser;
-
-    @FXML
     private TextField email;
-
-    @FXML
-    private TextField pass;
-
-    @FXML
-    private TextField permissions;
-
-    @FXML
-    private TextField userType;
-
-    @FXML
-    private TextField username;
 
     @FXML
     private Text haveAccount;
 
     @FXML
-    void addUser(ActionEvent event) {
+    private Button login_btn;
+
+    @FXML
+    private TextField pass;
+
+    @FXML
+    private TextField userID;
+
+    @FXML
+    void login(ActionEvent event) {
         try {
             root = FXMLLoader.load(getClass().getResource("main_page.fxml"));
-            stage = (Stage) addUser.getScene().getWindow();
+            stage = (Stage) login_btn.getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
@@ -55,9 +49,9 @@ public class Signup {
     }
 
     @FXML
-    void moveToLogin(MouseEvent event) {
+    void moveToSignup(MouseEvent event) {
         try {
-            root = FXMLLoader.load(getClass().getResource("login.fxml"));
+            root = FXMLLoader.load(getClass().getResource("signup.fxml"));
             stage = (Stage) haveAccount.getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
@@ -66,6 +60,5 @@ public class Signup {
             e.printStackTrace();
         }
     }
-
 
 }
