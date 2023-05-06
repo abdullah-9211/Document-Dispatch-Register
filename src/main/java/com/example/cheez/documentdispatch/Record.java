@@ -1,20 +1,24 @@
 package com.example.cheez.documentdispatch;
 
+import java.time.LocalDate;
+
 public class Record {
     String title;
     String senderID;
     String senderName;
     String reciever;
-    String dept;
+
+    LocalDate date;
 
     public Record() {}
 
-    public Record(String title, String senderID, String senderName, String reciever, String dept) {
+
+    public Record(String title, String senderID, String senderName, String reciever, LocalDate date) {
         this.title = title;
         this.senderID = senderID;
         this.senderName = senderName;
         this.reciever = reciever;
-        this.dept = dept;
+        this.date = date;
     }
 
     public String getTitle() {
@@ -49,11 +53,11 @@ public class Record {
         this.reciever = reciever;
     }
 
-    public String getDept() {
-        return dept;
+    public LocalDate getDate() {
+        return date;
     }
 
-    public void setDept(String dept) {
-        this.dept = dept;
+    public void setDate(LocalDate date) {
+        this.date = date;
     }
 }
