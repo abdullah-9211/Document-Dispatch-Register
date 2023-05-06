@@ -8,12 +8,12 @@ public class Record {
     String senderName;
     String reciever;
 
-    LocalDate date;
+    String date;
 
     public Record() {}
 
 
-    public Record(String title, String senderID, String senderName, String reciever, LocalDate date) {
+    public Record(String title, String senderID, String senderName, String reciever, String date) {
         this.title = title;
         this.senderID = senderID;
         this.senderName = senderName;
@@ -53,11 +53,11 @@ public class Record {
         this.reciever = reciever;
     }
 
-    public LocalDate getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(LocalDate date) {
+    public void setDate(String date) {
         this.date = date;
     }
 }

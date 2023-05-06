@@ -43,7 +43,22 @@ public class FormController {
     private Button scan_btn;
 
     @FXML
+    private TextField DateSent;
+
+    @FXML
     void scanDoc(ActionEvent event) {
+        DocumentHolder documentHolder = DocumentHolder.getInstance();
+
+        documentHolder.document = new Document();
+
+        documentHolder.document.title = EnterTitle.getText();
+        documentHolder.document.senderID = EnterSenderId.getText();
+        documentHolder.document.senderName = EnterSenderName.getText();
+        documentHolder.document.description = EnterDescription.getText();
+        documentHolder.document.priority = EnterAttatchments.getText();
+        documentHolder.document.dept = EnterDepartment.getText();
+        documentHolder.document.date = DateSent.getText();
+
         try {
             root = FXMLLoader.load(getClass().getResource("UploadDoc.fxml"));
             stage = (Stage) scan_btn.getScene().getWindow();

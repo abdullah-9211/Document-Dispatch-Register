@@ -22,7 +22,7 @@
             </font>
         </Button>
       <ListView fx:id="details_list" layoutX="21.0" layoutY="86.0" prefHeight="241.0" prefWidth="562.0" />
-      <Text fill="#30486e" fontSmoothingType="LCD" layoutX="21.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attachments: 2 + 1" textAlignment="CENTER">
+      <Text fx:id="attachTxt" fill="#30486e" fontSmoothingType="LCD" layoutX="21.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attachments: 2 + 1" textAlignment="CENTER">
          <font>
             <Font name="Georgia" size="30.0" />
          </font>
@@ -31,9 +31,6 @@
                <bumpInput>
                   <Shadow />
                </bumpInput>
-               <light>
-                  <Light.Distant />
-               </light>
             </Lighting>
          </effect>
       </Text>

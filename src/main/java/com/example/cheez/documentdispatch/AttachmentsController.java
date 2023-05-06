@@ -41,6 +41,8 @@ public class AttachmentsController implements Initializable {
     @FXML
     private ImageView image;
 
+    public DocumentHolder documentHolder;
+
     public List<String> attachment_fileNames;
     public List<String> attachment_filePaths;
 
@@ -54,6 +56,7 @@ public class AttachmentsController implements Initializable {
 
     @Override
     public void initialize(java.net.URL arg0, java.util.ResourceBundle arg1) {
+        documentHolder = DocumentHolder.getInstance();
         file_name.setText("No file selected");
         attachment_fileNames = new java.util.ArrayList<>();
         attachment_filePaths = new java.util.ArrayList<>();
@@ -87,6 +90,9 @@ public class AttachmentsController implements Initializable {
 
     @FXML
     void uploadAttachments(ActionEvent event) {
+        documentHolder.document.supportFiles = attachment_fileNames;
+        documentHolder.document.supportCount = fileCount;
+
         try {
             root = FXMLLoader.load(getClass().getResource("set_route.fxml"));
             stage = (Stage) done_btn.getScene().getWindow();

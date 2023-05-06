@@ -10,10 +10,12 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
 import javafx.scene.text.Font;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
+import java.time.LocalDate;
 import java.util.ResourceBundle;
 
 
@@ -28,9 +30,26 @@ public class DetailsController implements Initializable {
     @FXML
     private ListView<String> details_list;
 
+    private DocumentHolder documentHolder;
+    private DocumentsDB documentsDB;
+
+    @FXML
+    private Text attachTxt;
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        String[] details = {"Sent on: 25/03/2023    23:07:32 PM", "Route Followed:\nSource\nAccounts\nDirector", "Sender Name: Amir Rehman", "Title: Document Title", "Sender ID: 11101-55555-1", "Description: Sample Description" };
+        documentHolder = DocumentHolder.getInstance();
+        String date = documentHolder.document.date;
+        String route = "";
+        for (String r : documentHolder.document.route){
+            route += ("\n" + r);
+        }
+        String senderName = documentHolder.document.senderName;
+        String title = documentHolder.document.title;
+        String id = documentHolder.document.senderID;
+        String desc = documentHolder.document.description;
+
+        String[] details = {"Sent on: " + date, "Route Followed:" + route, "Sender Name: " + senderName, "Title: " + title, "Sender ID: " + id, "Description: " + desc };
         details_list.setCellFactory(cell -> {
             return new ListCell<String>(){
                 @Override
@@ -46,11 +65,19 @@ public class DetailsController implements Initializable {
 
         });
         details_list.getItems().addAll(details);
+
+        attachTxt.setText("Attachments: " + documentHolder.document.fileCount + " + " + documentHolder.document.supportCount);
+
     }
 
     @FXML
     void done(ActionEvent event) {
         // navigate to next page
+        documentsDB = DocumentsDB.getInstance();
+
+        Record record = new Record(documentHolder.document.title, documentHolder.document.senderID, documentHolder.document.senderName, documentHolder.document.route.get(documentHolder.document.route.size() - 1), documentHolder.document.date);
+        documentsDB.historyRecords.add(record);
+
         try {
             root = FXMLLoader.load(getClass().getResource("trackingPage.fxml"));
             stage = (Stage) done_btn.getScene().getWindow();

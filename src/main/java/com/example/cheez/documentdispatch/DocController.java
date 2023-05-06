@@ -41,6 +41,8 @@ public class DocController implements Initializable {
     @FXML
     private ImageView image;
 
+    public DocumentHolder documentHolder;
+
     public List<String> fileNames;
     public List<String> filePaths;
 
@@ -54,6 +56,7 @@ public class DocController implements Initializable {
 
     @Override
     public void initialize(java.net.URL arg0, java.util.ResourceBundle arg1) {
+        documentHolder = DocumentHolder.getInstance();
         file_name.setText("No file selected");
         fileNames = new java.util.ArrayList<>();
         filePaths = new java.util.ArrayList<>();
@@ -86,6 +89,9 @@ public class DocController implements Initializable {
 
     public void done(){
         // navigate to next page
+        documentHolder.document.files = fileNames;
+        documentHolder.document.fileCount = fileCount;
+
         try {
             root = FXMLLoader.load(getClass().getResource("UploadAttatchments.fxml"));
             stage = (Stage) done_btn.getScene().getWindow();
