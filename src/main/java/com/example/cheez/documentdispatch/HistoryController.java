@@ -84,15 +84,55 @@ public class HistoryController {
             e.printStackTrace();
         }
     }
-//    datalist.addAll(//add objects that are created)
-//    @FXML
-//    FilteredList<Record> filteredData = new FilteredList<>(datalist, b => true);
-//    if (newValue ==null || newValue.isEmpty()){
-//        return true;
-//    }
-//    String lowerCaseFilter = newValue.toLowerCase();
-    //if cases to find stuff out if present or stuff
+    public class Item {
+        private LocalDate date;
+        private String name;
+        private int id;
 
+        public Item(LocalDate date, String name, int id) {
+            this.date = date;
+            this.name = name;
+            this.id = id;
+        }
+
+        public LocalDate getDate() {
+            return date;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public int getId() {
+            return id;
+        }
+    }
+
+
+    List<Item> itemList = new ArrayList<>();
+    itemList.add(new Item(LocalDate.of(2023, 4, 30), "Umar", 1));
+    itemList.add(new Item(LocalDate.of(2023, 5, 1), "Abdullah", 2));
+    itemList.add(new Item(LocalDate.of(2023, 5, 2), "Aleena", 3));
+
+    @FXML
+    void handleSearchButton(ActionEvent event) {
+
+        String searchDate = SearchFromDate.getText();
+        String searchName = SearchTitle.getText();
+        String searchId = IDSearch.getText();
+
+        List<Item> filteredList = itemList.stream()
+                .filter(item -> searchDate.isEmpty() || item.getDate().toString().contains(searchDate))
+                .filter(item -> searchName.isEmpty() || item.getName().contains(searchName))
+                .filter(item -> searchId.isEmpty() || String.valueOf(item.getId()).contains(searchId))
+                .collect(Collectors.toList());
+        ObservableList<Item> observableList = FXCollections.observableArrayList(filteredList);
+        historyTable.setItems(observableList);
+
+        VBox vbox = new VBox(historyTable);
+        Scene scene = new Scene(vbox);
+        stage.setScene(scene);
+    }
 
 
 
