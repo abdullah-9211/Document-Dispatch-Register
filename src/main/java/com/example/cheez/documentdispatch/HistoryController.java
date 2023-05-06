@@ -19,6 +19,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import com.example.cheez.documentdispatch.DocumentsDB;
 
 public class HistoryController {
 
@@ -26,11 +27,13 @@ public class HistoryController {
     private Scene scene;
     private Parent root;
 
-    final ObservableList<Record> historyRecords = FXCollections.observableArrayList(Arrays.asList(new Record("Doc 1", "123-3445-323", "Amir Qayyum", "Director", LocalDate.of(2023, 4, 30)), new Record("Doc 2", "3839-8392-193", "Gohar Rasheed", "Director", LocalDate.of(2023, 6, 24)), new Record("Doc 3", "381-3892-3093", "Tahir Baig", "Finance Dept.", LocalDate.of(2023, 1, 15)), new Record("Doc 4", "1235-8493-849", "Javeria Arshad", "One Stop", LocalDate.of(2023, 2, 11))));
-
+    ObservableList<Record> historyRecords;
 
     @FXML
     public void initialize() {
+
+        DocumentsDB holder = DocumentsDB.getInstance();
+        historyRecords = holder.historyRecords;
 
         title.setCellValueFactory(new PropertyValueFactory<Record, String>("title"));
         senderID.setCellValueFactory(new PropertyValueFactory<Record, String>("senderID"));

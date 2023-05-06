@@ -68,18 +68,6 @@ public class MainPageController {
         }
     }
 
-    @FXML
-    void trackDoc(ActionEvent event) {
-        try {
-            root = FXMLLoader.load(getClass().getResource("trackingPage.fxml"));
-            stage = (Stage) track_btn.getScene().getWindow();
-            scene = new Scene(root);
-            stage.setScene(scene);
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 
 
 }

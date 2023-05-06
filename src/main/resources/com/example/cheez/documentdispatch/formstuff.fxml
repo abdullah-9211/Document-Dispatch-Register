@@ -37,7 +37,7 @@
                   </Pane>
                   <Pane prefHeight="45.0" prefWidth="350.0">
                      <children>
-                        <Text layoutX="14.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sender ID :">
+                        <Text layoutX="14.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sender ID:">
                            <font>
                               <Font name="Georgia" size="17.0" />
                            </font>
@@ -47,12 +47,12 @@
                   </Pane>
                   <Pane prefHeight="45.0" prefWidth="350.0">
                      <children>
-                        <Text layoutX="14.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID/Rollno.">
+                        <Text layoutX="14.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sender Name:">
                            <font>
                               <Font name="Georgia" size="17.0" />
                            </font>
                         </Text>
-                        <TextField fx:id="EnterSenderName" layoutX="140.0" layoutY="7.0" prefHeight="26.0" prefWidth="240.0" text="Amir Rehman" />
+                        <TextField fx:id="EnterSenderName" layoutX="140.0" layoutY="7.0" prefHeight="26.0" prefWidth="240.0" text="Tariq Ijlaal" />
                      </children>
                   </Pane>
                   <Pane prefHeight="45.0" prefWidth="350.0">
@@ -62,7 +62,7 @@
                               <Font name="Georgia" size="17.0" />
                            </font>
                         </Text>
-                        <TextField fx:id="EnterFinalReceiver" layoutX="140.0" layoutY="7.0" prefHeight="26.0" prefWidth="240.0" text="Director" />
+                        <TextField fx:id="EnterFinalReceiver" layoutX="140.0" layoutY="7.0" prefHeight="26.0" prefWidth="240.0" text="Finance" />
                      </children>
                   </Pane>
                   <Pane prefHeight="45.0" prefWidth="350.0">
