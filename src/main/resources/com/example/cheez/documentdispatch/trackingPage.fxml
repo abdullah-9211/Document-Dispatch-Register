@@ -11,7 +11,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f2f2f2;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cheez.documentdispatch.TrackingPageController">
    <children>
-      <Text fill="#0f5d81" fontSmoothingType="LCD" layoutX="222.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TRACKING" textAlignment="CENTER">
+      <Text fill="#304860" fontSmoothingType="LCD" layoutX="222.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TRACKING" textAlignment="CENTER">
          <font>
             <Font name="Georgia" size="30.0" />
          </font>
@@ -28,29 +28,32 @@
       </Text>
       <Pane layoutX="93.0" layoutY="100.0" prefHeight="234.0" prefWidth="414.0" style="-fx-background-color: #dedede;">
          <children>
-            <Circle fill="#0583fa" layoutX="69.0" layoutY="38.0" radius="24.0" stroke="#dedede" strokeType="INSIDE" />
-            <Circle fill="#0583fa" layoutX="69.0" layoutY="117.0" radius="24.0" stroke="#dedede" strokeType="INSIDE" />
-            <Circle fill="WHITE" layoutX="69.0" layoutY="196.0" radius="24.0" stroke="#dedede" strokeType="INSIDE" />
+            <Circle fill="#304860" layoutX="69.0" layoutY="38.0" radius="24.0" stroke="#dedede" strokeType="INSIDE" style="-fx-stroke: #000000;" />
+            <Circle fill="#f4f4f4" layoutX="69.0" layoutY="117.0" radius="24.0" stroke="#dedede" strokeType="INSIDE" style="-fx-stroke: #000000;" />
+            <Circle fill="#f2f1f1" layoutX="69.0" layoutY="196.0" radius="24.0" stroke="#dedede" strokeType="INSIDE" style="-fx-stroke: #000000;" />
             <Line endX="-100.0" endY="27.999984741210938" layoutX="169.0" layoutY="65.0" startX="-100.0" startY="-3.0000152587890625" />
             <Line endX="-100.0" endY="27.999984741210938" layoutX="168.0" layoutY="145.0" startX="-100.0" startY="-3.0000152587890625" />
             <Line endX="-91.5999755859375" endY="-6.5999908447265625" layoutX="169.0" layoutY="93.0" startX="-100.0" />
             <Line endX="-50.5" endY="63.49998474121094" layoutX="119.0" layoutY="30.0" startX="-57.5999755859375" startY="55.59999084472656" />
             <Line endX="-111.0" endY="16.999984741210938" layoutX="179.0" layoutY="157.0" startX="-103.20001220703125" startY="8.600006103515625" />
-            <Text layoutX="175.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Document Dispatched from Source">
+            <Text layoutX="175.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Document Dispatched from">
                <font>
                   <Font size="13.0" />
                </font>
             </Text>
-            <Text layoutX="173.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Document Dispatched from Finance">
+            <Text layoutX="173.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Document to be recieved at">
                <font>
                   <Font size="13.0" />
                </font>
             </Text>
-            <Text layoutX="173.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Document to be recieved at Academics">
+            <Text layoutX="173.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Document to be recieved at">
                <font>
                   <Font size="13.0" />
                </font>
             </Text>
+            <Text fx:id="firstID" layoutX="334.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Admin" wrappingWidth="65.33673095703125" />
+            <Text fx:id="secondID" layoutX="332.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Admin" wrappingWidth="65.33673095703125" />
+            <Text fx:id="thirdID" layoutX="332.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Admin" wrappingWidth="65.33673095703125" />
          </children>
       </Pane>
       <Line endX="33.0" endY="232.0" layoutX="127.0" layoutY="41.0" startX="26.4000244140625" startY="224.80001831054688" />
